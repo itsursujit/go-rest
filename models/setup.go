@@ -7,8 +7,8 @@ import (
 )
 
 func SetupModels() *gorm.DB {
-	db, err := gorm.Open("sqlite3", "test.db")
-	// db, err := gorm.Open("mysql", "root:root@/contacts?charset=utf8&parseTime=True&loc=Local")
+	// db, err := gorm.Open("sqlite3", "test.db")
+	db, err := gorm.Open("mysql", "root:root@/contacts?charset=utf8&parseTime=True&loc=Local")
 
 	if err != nil {
 		panic("Failed to connect to database!")
